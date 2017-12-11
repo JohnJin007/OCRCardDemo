@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E91B4B711FDE22E400C2DB8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4B701FDE22E400C2DB8B /* AppDelegate.m */; };
-		E91B4B741FDE22E400C2DB8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4B731FDE22E400C2DB8B /* ViewController.m */; };
 		E91B4B771FDE22E400C2DB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B4B751FDE22E400C2DB8B /* Main.storyboard */; };
 		E91B4B791FDE22E400C2DB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91B4B781FDE22E400C2DB8B /* Assets.xcassets */; };
-		E91B4B7C1FDE22E400C2DB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B4B7A1FDE22E400C2DB8B /* LaunchScreen.storyboard */; };
 		E91B4B7F1FDE22E400C2DB8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4B7E1FDE22E400C2DB8B /* main.m */; };
 		E91B4B891FDE22E400C2DB8B /* OCRCardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4B881FDE22E400C2DB8B /* OCRCardDemoTests.m */; };
 		E91B4B941FDE22E400C2DB8B /* OCRCardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4B931FDE22E400C2DB8B /* OCRCardDemoUITests.m */; };
+		E91B4BA41FDE234A00C2DB8B /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA11FDE234900C2DB8B /* IdcardQuality.framework */; };
+		E91B4BA51FDE234A00C2DB8B /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA11FDE234900C2DB8B /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E91B4BA61FDE234A00C2DB8B /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA21FDE234900C2DB8B /* AipOcrSdk.framework */; };
+		E91B4BA71FDE234A00C2DB8B /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA21FDE234900C2DB8B /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E91B4BA81FDE234A00C2DB8B /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA31FDE234900C2DB8B /* AipBase.framework */; };
+		E91B4BA91FDE234A00C2DB8B /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91B4BA31FDE234900C2DB8B /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E91B4BAD1FDE264800C2DB8B /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B4BAC1FDE264800C2DB8B /* RootTableViewController.m */; };
+		E91B4BAF1FDE26C100C2DB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B4BAE1FDE26C100C2DB8B /* LaunchScreen.storyboard */; };
+		E91B4BB11FDE273F00C2DB8B /* OCRCardDemo.license in Resources */ = {isa = PBXBuildFile; fileRef = E91B4BB01FDE273F00C2DB8B /* OCRCardDemo.license */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,15 +41,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E91B4BAA1FDE234A00C2DB8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E91B4BA91FDE234A00C2DB8B /* AipBase.framework in Embed Frameworks */,
+				E91B4BA51FDE234A00C2DB8B /* IdcardQuality.framework in Embed Frameworks */,
+				E91B4BA71FDE234A00C2DB8B /* AipOcrSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E91B4B6C1FDE22E400C2DB8B /* OCRCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B4B6F1FDE22E400C2DB8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E91B4B701FDE22E400C2DB8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E91B4B721FDE22E400C2DB8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E91B4B731FDE22E400C2DB8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E91B4B761FDE22E400C2DB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E91B4B781FDE22E400C2DB8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E91B4B7B1FDE22E400C2DB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E91B4B7D1FDE22E400C2DB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91B4B7E1FDE22E400C2DB8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E91B4B841FDE22E400C2DB8B /* OCRCardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRCardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +71,13 @@
 		E91B4B8F1FDE22E400C2DB8B /* OCRCardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRCardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B4B931FDE22E400C2DB8B /* OCRCardDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRCardDemoUITests.m; sourceTree = "<group>"; };
 		E91B4B951FDE22E500C2DB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91B4BA11FDE234900C2DB8B /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
+		E91B4BA21FDE234900C2DB8B /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		E91B4BA31FDE234900C2DB8B /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		E91B4BAB1FDE264800C2DB8B /* RootTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		E91B4BAC1FDE264800C2DB8B /* RootTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		E91B4BAE1FDE26C100C2DB8B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E91B4BB01FDE273F00C2DB8B /* OCRCardDemo.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OCRCardDemo.license; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91B4BA81FDE234A00C2DB8B /* AipBase.framework in Frameworks */,
+				E91B4BA41FDE234A00C2DB8B /* IdcardQuality.framework in Frameworks */,
+				E91B4BA61FDE234A00C2DB8B /* AipOcrSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,9 @@
 		E91B4B631FDE22E400C2DB8B = {
 			isa = PBXGroup;
 			children = (
+				E91B4BA31FDE234900C2DB8B /* AipBase.framework */,
+				E91B4BA21FDE234900C2DB8B /* AipOcrSdk.framework */,
+				E91B4BA11FDE234900C2DB8B /* IdcardQuality.framework */,
 				E91B4B6E1FDE22E400C2DB8B /* OCRCardDemo */,
 				E91B4B871FDE22E400C2DB8B /* OCRCardDemoTests */,
 				E91B4B921FDE22E400C2DB8B /* OCRCardDemoUITests */,
@@ -103,11 +136,12 @@
 			children = (
 				E91B4B6F1FDE22E400C2DB8B /* AppDelegate.h */,
 				E91B4B701FDE22E400C2DB8B /* AppDelegate.m */,
-				E91B4B721FDE22E400C2DB8B /* ViewController.h */,
-				E91B4B731FDE22E400C2DB8B /* ViewController.m */,
+				E91B4BAB1FDE264800C2DB8B /* RootTableViewController.h */,
+				E91B4BAC1FDE264800C2DB8B /* RootTableViewController.m */,
 				E91B4B751FDE22E400C2DB8B /* Main.storyboard */,
 				E91B4B781FDE22E400C2DB8B /* Assets.xcassets */,
-				E91B4B7A1FDE22E400C2DB8B /* LaunchScreen.storyboard */,
+				E91B4BAE1FDE26C100C2DB8B /* LaunchScreen.storyboard */,
+				E91B4BB01FDE273F00C2DB8B /* OCRCardDemo.license */,
 				E91B4B7D1FDE22E400C2DB8B /* Info.plist */,
 				E91B4B7E1FDE22E400C2DB8B /* main.m */,
 			);
@@ -142,6 +176,7 @@
 				E91B4B681FDE22E400C2DB8B /* Sources */,
 				E91B4B691FDE22E400C2DB8B /* Frameworks */,
 				E91B4B6A1FDE22E400C2DB8B /* Resources */,
+				E91B4BAA1FDE234A00C2DB8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,7 +234,7 @@
 				TargetAttributes = {
 					E91B4B6B1FDE22E400C2DB8B = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E91B4B831FDE22E400C2DB8B = {
 						CreatedOnToolsVersion = 9.1;
@@ -238,9 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91B4B7C1FDE22E400C2DB8B /* LaunchScreen.storyboard in Resources */,
+				E91B4BAF1FDE26C100C2DB8B /* LaunchScreen.storyboard in Resources */,
 				E91B4B791FDE22E400C2DB8B /* Assets.xcassets in Resources */,
 				E91B4B771FDE22E400C2DB8B /* Main.storyboard in Resources */,
+				E91B4BB11FDE273F00C2DB8B /* OCRCardDemo.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91B4B741FDE22E400C2DB8B /* ViewController.m in Sources */,
 				E91B4B7F1FDE22E400C2DB8B /* main.m in Sources */,
 				E91B4B711FDE22E400C2DB8B /* AppDelegate.m in Sources */,
+				E91B4BAD1FDE264800C2DB8B /* RootTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +345,6 @@
 				E91B4B761FDE22E400C2DB8B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E91B4B7A1FDE22E400C2DB8B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E91B4B7B1FDE22E400C2DB8B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,11 +458,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M3EM4YGUHH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OCRCardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingan.OCRCardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6991840e-b98d-4847-b9e5-0687e86b0acb";
+				PROVISIONING_PROFILE_SPECIFIER = PingAnWildcardAppID_Dev_Profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +478,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M3EM4YGUHH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OCRCardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingan.OCRCardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6991840e-b98d-4847-b9e5-0687e86b0acb";
+				PROVISIONING_PROFILE_SPECIFIER = PingAnWildcardAppID_Dev_Profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
